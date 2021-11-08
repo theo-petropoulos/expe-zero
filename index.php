@@ -4,6 +4,7 @@ require 'vendor/autoload.php';
 $f3 = \Base::instance();
 $f3->set('JAR.domain', $_SERVER['HTTP_HOST']);
 require CONTROLLER . 'data/SessionCTRL.php';
+$session = new SessionCTRL();
 
 /** 
  * Admin page
