@@ -1,0 +1,115 @@
+    .body-accueil {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .header-accueil {
+        background-color: black;
+    }
+    
+    .navi {
+        width: 100%;
+        margin: 0 auto;
+        position: sticky;
+        top: 0rem;
+        z-index: 2;
+        font-family: 'Noto Sans', sans-serif;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .navi ul {
+        list-style-type: none;
+        margin-left: 20%;
+        margin-right: 1%;
+        flex-wrap: nowrap;
+    }
+    
+    .navi ul li {
+        float: left;
+        width: 20%;
+        text-align: right;
+        position: relative;
+    }
+    
+    .navi ul::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .navi a {
+        display: block;
+        flex-direction: row;
+        text-decoration: none;
+        color: white;
+        border-bottom: .125rem solid transparent;
+        padding: .500rem;
+        padding-left: 0;
+    }
+    
+    .navi a:hover {
+        color: rgb(187, 146, 108);
+    }
+    
+    .sous {
+        display: none;
+        flex-direction: column;
+        box-shadow: 0rem 0.0625rem 0.125rem #ccc;
+        background-color: black;
+        position: absolute;
+        width: 70%;
+        border-radius: .625rem;
+    }
+    
+    .navi>ul li:hover .sous {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sous li {
+        width: 20%;
+        text-align: center;
+    }
+    
+    .sous a {
+        padding: 1rem;
+        width: 250%;
+        border-bottom: none;
+        text-align: center;
+    }
+    
+    .sous a:hover {
+        border-bottom: none;
+        background-color: rgb(244, 247, 246);
+    }
+    
+    .scrolling>a::after {
+        content: " ▼";
+        font-size: .90rem;
+    }
+    
+    .logo {
+        width: 45%;
+        height: 156%;
+    }
+    
+    .container-logo {
+        width: 12.5rem;
+        display: flex;
+    }
+    
+    .container-logo a {
+        width: 132%;
+        height: 99%;
+        margin: -16%;
+        margin-left: -390px;
+        margin-bottom: -108px;
+    }
+    
+    .dii {
+        display: flex;
+        flex-direction: row;
+    }
