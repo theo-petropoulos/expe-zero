@@ -25,6 +25,24 @@ $f3->route('POST /admin',
     }
 );
 
+$f3->route('GET /admin/modify_@item', 
+    function($f3, $params){
+        $f3->set('action', 'modify_form');
+        $f3->set('item', $params['item']);
+        require 'controller/admin/AdminModifyierCTRL.php';
+        $page = new AdminModifyierCTRL();
+    }
+);
+
+$f3->route('POST|PUT /admin/modify_@item', 
+    function($f3, $params){
+        $f3->set('action', 'modify_send');
+        $f3->set('item', $params['item']);
+        require 'controller/admin/AdminModifyierCTRL.php';
+        $page = new AdminModifyierCTRL();
+    }
+);
+
 /** 
  * Home page
  */
