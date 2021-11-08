@@ -1,0 +1,296 @@
+#login_admin, #admin_home_landing {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Roboto Mono";
+  color: white;
+  background: #121833;
+  width: 70%;
+  min-width: 350px;
+  margin: 1%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+  padding: 1% 2%;
+  border-radius: 6px;
+  -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#login_admin input, #admin_home_landing input {
+  width: 30%;
+  min-width: 150px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 1% 0%;
+  background: #e1e1e1;
+  outline: 0;
+  border-radius: 4px;
+  font-family: "Roboto Mono";
+  font-weight: 600;
+  text-align: center;
+}
+
+#login_admin label, #admin_home_landing label {
+  font-weight: 800;
+}
+
+#login_admin input[type=submit], #admin_home_landing input[type=submit] {
+  background: #33712b;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1% 2%;
+  border-radius: 6px;
+  color: white;
+  font-family: "Roboto Mono";
+}
+
+#login_admin input[type=submit]:hover, #admin_home_landing input[type=submit]:hover {
+  cursor: pointer;
+  background: #48a83c;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#login_admin#admin_home_landing #admin_home_categories, #admin_home_landing#admin_home_landing #admin_home_categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#login_admin#admin_home_landing #admin_home_categories a, #admin_home_landing#admin_home_landing #admin_home_categories a {
+  color: #48a83c;
+  font-weight: 800;
+  text-decoration: none;
+  margin: 1%;
+}
+
+#login_admin#admin_home_landing #admin_home_categories a:hover, #admin_home_landing#admin_home_landing #admin_home_categories a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #eeb230;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#previous_articles {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 95%;
+  font-family: "Roboto Mono";
+}
+
+#previous_articles article {
+  width: 15%;
+  position: relative;
+  min-width: 125px;
+  margin: 2% 1%;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  background: white;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1% 2%;
+}
+
+#previous_articles article .delete_article {
+  color: red;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-weight: 800;
+  outline: none;
+  background: none;
+  border: none;
+  font-size: calc(8px + 0.6vw);
+}
+
+#previous_articles article .delete_article:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+#previous_articles article img {
+  width: 90%;
+}
+
+#previous_articles article h5 {
+  font-size: calc(10px + 0.4vw);
+}
+
+#previous_articles article h6 {
+  font-size: calc(8px + 0.35vw);
+}
+
+.article_form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 65%;
+  background: #121833;
+  color: white;
+  font-family: "Roboto Mono";
+  padding: 1% 2%;
+  text-align: center;
+  border-radius: 6px;
+  -webkit-box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  margin: 1%;
+}
+
+.article_form input {
+  margin: 1%;
+  width: 30%;
+  min-width: 150px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 1% 0%;
+  background: #e1e1e1;
+  outline: 0;
+  border-radius: 4px;
+  font-family: "Roboto Mono";
+  font-weight: 600;
+  text-align: center;
+}
+
+.article_form input[type=file] {
+  display: none;
+}
+
+.article_form input[type=submit] {
+  background: #33712b;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1% 2%;
+  border-radius: 6px;
+  color: white;
+  font-family: "Roboto Mono";
+}
+
+.article_form input[type=submit]:hover {
+  cursor: pointer;
+  background: #48a83c;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.article_form label {
+  font-weight: 600;
+}
+
+.article_form label.file_button {
+  padding: 1% 2%;
+  background: #eeb230;
+  border-radius: 6px;
+  margin: 1%;
+}
+
+.article_form label.file_button:hover {
+  cursor: pointer;
+  background: #eed130;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.back_button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 1%;
+  padding: 1% 2%;
+  background: white;
+  color: #121833;
+  border: 1px solid #121833;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: "Roboto Mono";
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.back_button:hover {
+  cursor: pointer;
+  background: #c7ebff;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.h3_admin {
+  font-size: calc(20px + 0.7vw);
+  margin: 1.5%;
+  color: #4283d8;
+}
+
+.success_message {
+  font-family: "Roboto Mono";
+  font-size: calc(10px + 0.7vw);
+  color: #121833;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=admin.css.map */

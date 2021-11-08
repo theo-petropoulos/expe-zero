@@ -1,5 +1,5 @@
 <section id="admin_home_landing">
-    <h3>Administration</h3>
+    <h3 class="h3_admin">Administration</h3>
     <div id="admin_home_categories">
         <a href="admin/modify_password">Modifier le mot de passe</a>
         <a href="admin/modify_medias">Modifier les médias</a>

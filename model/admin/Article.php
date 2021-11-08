@@ -41,10 +41,10 @@ class Article extends Database{
          */
         if(!empty($this->titre) && !empty($this->sous_titre) && $upload === 'OK'){
             $stmt = self::$db->prepare(
-                "INSERT INTO $this->location ( `image_path`, `titre`, `sous_titre` )
-                VALUES ( ?, ?, ?);"
+                "INSERT INTO $this->location ( `image_path`, `image_name`, `titre`, `sous_titre` )
+                VALUES ( ?, ?, ?, ?);"
             );
-            $stmt->execute([$dbpath, $this->titre, $this->soustitre]);
+            $stmt->execute([$dbpath, $this->image_name, $this->titre, $this->sous_titre]);
             return 'article_success';
         }
     }

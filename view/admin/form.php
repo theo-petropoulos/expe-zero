@@ -2,7 +2,7 @@
 
 ?>
 
-<form method="post" action="admin">
+<form method="post" action="admin" id="login_admin">
     <label for="admlogin">Identifiant :</label>
     <input type="text" name="admlogin" required>
     <label for="admpassword">Mot de passe :</label>

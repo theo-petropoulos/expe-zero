@@ -3,6 +3,7 @@ require '_config.php';
 require 'vendor/autoload.php';
 $f3 = \Base::instance();
 $f3->set('JAR.domain', $_SERVER['HTTP_HOST']);
+
 require CONTROLLER . 'data/SessionCTRL.php';
 $session = new SessionCTRL();
 
@@ -11,6 +12,7 @@ $session = new SessionCTRL();
  */
 $f3->route('GET /admin',
     function($f3){
+        echo "<title>Administration</title>";
         $f3->set('action', 'admin_access');
         require 'controller/admin/AdminCTRL.php';
         $page = new AdminCTRL();
@@ -19,6 +21,7 @@ $f3->route('GET /admin',
 
 $f3->route('POST /admin',
     function($f3){
+        echo "<title>Administration</title>";
         $f3->set('action', 'admin_login');
         require 'controller/admin/AdminCTRL.php';
         $page = new AdminCTRL();
@@ -27,6 +30,7 @@ $f3->route('POST /admin',
 
 $f3->route('GET /admin/modify_@item', 
     function($f3, $params){
+        echo "<title>Administration</title>";
         $f3->set('action', 'modify_form');
         $f3->set('item', $params['item']);
         require 'controller/admin/AdminModifyierCTRL.php';
@@ -36,6 +40,7 @@ $f3->route('GET /admin/modify_@item',
 
 $f3->route('POST|PUT /admin/modify_@item', 
     function($f3, $params){
+        echo "<title>Administration</title>";
         $f3->set('action', 'modify_send');
         $f3->set('item', $params['item']);
         require 'controller/admin/AdminModifyierCTRL.php';
@@ -48,10 +53,12 @@ $f3->route('POST|PUT /admin/modify_@item',
  */
 $f3->route('GET /',
     function(){
+        echo "<title>Accueil</title>";
         require 'controller/pages/IndexCTRL.php';
         $page = new IndexCTRL();
     }
 );
 
+require REQUIRES . 'head.php';
 
 $f3->run();
