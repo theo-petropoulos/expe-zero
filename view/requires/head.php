@@ -2,7 +2,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/expe-zero/assets/css/globals.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="/expe-zero/assets/css/<?=explode('/', $f3->hive()['PATH'])[1];?>.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" 
+        href="/expe-zero/assets/css/<?=explode('/', $f3->hive()['PATH'])[1] ? explode('/', $f3->hive()['PATH'])[1] : 'accueil';?>.css?v=<?php echo time(); ?>">
     <link rel="icon" href="/expe-zero/assets/images/icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

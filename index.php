@@ -52,10 +52,54 @@ $f3->route('POST|PUT /admin/modify_@item',
  * Home page
  */
 $f3->route('GET /',
-    function(){
+    function($f3){
         echo "<title>Accueil</title>";
         require 'controller/pages/IndexCTRL.php';
         $page = new IndexCTRL();
+    }
+);
+
+/** 
+ * Challenges page
+ */
+$f3->route('GET /defis',
+    function($f3){
+        echo "<title>Défis</title>";
+        require 'controller/pages/DefisCTRL.php';
+        $page = new DefisCTRL();
+    }
+);
+
+/** 
+ * Services page
+ */
+$f3->route('GET /services',
+    function($f3){
+        echo "<title>Services</title>";
+        require 'controller/pages/ServicesCTRL.php';
+        $page = new ServicesCTRL();
+    }
+);
+
+/** 
+ * Services page
+ */
+$f3->route('GET /medias',
+    function($f3){
+        echo "<title>Médias</title>";
+        require 'controller/pages/MediasCTRL.php';
+        $page = new MediasCTRL();
+    }
+);
+
+/** 
+ * Expeditions page
+ */
+$f3->route('GET /expeditions',
+    function($f3){
+        echo "<title>Expéditions</title>";
+        require 'controller/pages/ExpeditionsCTRL.php';
+        $page = new ExpeditionsCTRL();
     }
 );
 
