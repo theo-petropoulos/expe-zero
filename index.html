@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+<h1 class="bg-green-600 text-gray-200 px-3 py-2 ml-24 mr-24 mt-4 rounded-md text-center text-sm font-medium">Formulaire de contact</h1>    
+
+<form action="contact.php" method="POST" class="mt-5 md:mt-0 md:col-span-2 bg-gray-200 px-12 py-6 rounded-md">
+<div class="shadow overflow-hidden sm:rounded-md">
+    <div class="px-4 py-5 bg-gray-200 sm:p-6">
+    <div class="grid grid-cols-6 gap-6">
+        <div class="col-span-6 sm:col-span-3">
+        <label for="first-name" class="block text-sm font-medium text-gray-700">Prénom</label>
+        <input type="text" name="prenom" id="first-name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+        </div>
+
+        <div class="col-span-6 sm:col-span-3">
+        <label for="last-name" class="block text-sm font-medium text-gray-700">Nom</label>
+        <input type="text" name="nom" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+        </div>
+
+        <div class="col-span-6 sm:col-span-3">
+        <label for="email-address" class="block text-sm font-medium text-gray-700">Adresse email</label>
+        <input type="text" name="email" id="email-address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+        </div>
+
+        <div class="col-span-6 sm:col-span-3">
+        <label for="society" class="block text-sm font-medium text-gray-700">Société</label>
+        <input type="text" name="society" id="society" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+        </div>
+
+        <div class="col-span-6">
+        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+        <input type="text" name="street-address" id="message" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md">
+        </div>
+    </div>
+    </div>
+    <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+    <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-400 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        Envoyer
+    </button>
+    </div>
+</div>
+</form>
+
+
+</html>
