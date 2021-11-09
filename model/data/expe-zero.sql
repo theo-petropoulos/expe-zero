@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mar. 09 nov. 2021 à 13:33
+-- Généré le : mar. 09 nov. 2021 à 15:45
 -- Version du serveur :  8.0.21
 -- Version de PHP : 8.0.3
 
@@ -30,18 +30,18 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE IF NOT EXISTS `admin` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `login` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `authtoken` varchar(255) NOT NULL,
+  `login` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `authtoken` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `admin`
 --
 
 INSERT INTO `admin` (`id`, `login`, `password`, `authtoken`) VALUES
-(1, '$2y$10$.Dp.HRuENmhgw7vmCHKQT.Tl2vG15nVoLSTD20UJNA7dTCtgpouD.', '$2y$10$ezbfCjjSLteub0zxW8NnROR6llR/2On3u.Zmg6dM7vB.z8N.NIahi', '0272737a31e866be13381413ff752808');
+(1, '$2y$10$.Dp.HRuENmhgw7vmCHKQT.Tl2vG15nVoLSTD20UJNA7dTCtgpouD.', '$2y$10$ezbfCjjSLteub0zxW8NnROR6llR/2On3u.Zmg6dM7vB.z8N.NIahi', '3082bbe48d65ef7337c729ba135f2a8b');
 
 -- --------------------------------------------------------
 
@@ -52,13 +52,13 @@ INSERT INTO `admin` (`id`, `login`, `password`, `authtoken`) VALUES
 DROP TABLE IF EXISTS `defis`;
 CREATE TABLE IF NOT EXISTS `defis` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `image_path` varchar(255) NOT NULL,
-  `image_name` varchar(255) NOT NULL,
+  `image_path` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `image_name` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
   `numero` int NOT NULL,
-  `titre` varchar(750) NOT NULL,
-  `sous_titre` varchar(750) NOT NULL,
+  `titre` varchar(750) COLLATE utf8mb4_general_ci NOT NULL,
+  `sous_titre` varchar(750) COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `defis`
@@ -78,13 +78,13 @@ INSERT INTO `defis` (`id`, `image_path`, `image_name`, `numero`, `titre`, `sous_
 DROP TABLE IF EXISTS `expeditions`;
 CREATE TABLE IF NOT EXISTS `expeditions` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `image_path` varchar(255) NOT NULL,
-  `image_name` varchar(255) NOT NULL,
+  `image_path` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `image_name` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
   `numero` int NOT NULL,
-  `titre` varchar(750) NOT NULL,
-  `sous_titre` varchar(750) NOT NULL,
+  `titre` varchar(750) COLLATE utf8mb4_general_ci NOT NULL,
+  `sous_titre` varchar(750) COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `expeditions`
@@ -107,13 +107,13 @@ INSERT INTO `expeditions` (`id`, `image_path`, `image_name`, `numero`, `titre`, 
 DROP TABLE IF EXISTS `medias`;
 CREATE TABLE IF NOT EXISTS `medias` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `image_path` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `image_name` varchar(255) NOT NULL,
-  `categorie_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `image_path` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `image_name` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `categorie_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `categorie_id` int NOT NULL,
-  `lien` varchar(500) NOT NULL,
+  `lien` varchar(500) COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `medias`
@@ -142,10 +142,10 @@ INSERT INTO `medias` (`id`, `image_path`, `image_name`, `categorie_name`, `categ
 DROP TABLE IF EXISTS `partenaires`;
 CREATE TABLE IF NOT EXISTS `partenaires` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `image_path` varchar(255) NOT NULL,
-  `image_name` varchar(255) NOT NULL,
+  `image_path` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `image_name` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `partenaires`
@@ -172,13 +172,13 @@ INSERT INTO `partenaires` (`id`, `image_path`, `image_name`) VALUES
 DROP TABLE IF EXISTS `services`;
 CREATE TABLE IF NOT EXISTS `services` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `image_path` varchar(255) NOT NULL,
-  `image_name` varchar(255) NOT NULL,
+  `image_path` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `image_name` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
   `numero` int NOT NULL,
-  `titre` varchar(750) NOT NULL,
-  `sous_titre` varchar(750) NOT NULL,
+  `titre` varchar(750) COLLATE utf8mb4_general_ci NOT NULL,
+  `sous_titre` varchar(750) COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `services`
