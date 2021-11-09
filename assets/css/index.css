@@ -1,0 +1,55 @@
+#banner_container {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+#banner_container #banner_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#banner_container h3 {
+  position: absolute;
+  bottom: 25%;
+  left: 25%;
+  -webkit-transform: translate(-25%, 25%);
+          transform: translate(-25%, 25%);
+  color: white;
+  font: "Roboto Mono";
+}
+
+#index_container {
+  font-family: "Roboto Mono";
+  width: 100%;
+  position: relative;
+  padding: 2% 3%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#index_container h1 {
+  font-size: calc(24px + 1.5vw);
+  color: black;
+  margin-top: 2%;
+}
+
+#index_container p {
+  font-size: calc(16px + 1vw);
+}
+
+#index_container .separator_green {
+  content: '';
+  display: block;
+  height: 8px;
+  width: 50%;
+  background: green;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 1%;
+}
+/*# sourceMappingURL=index.css.map */

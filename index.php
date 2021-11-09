@@ -7,6 +7,9 @@ $f3->set('JAR.domain', $_SERVER['HTTP_HOST']);
 require CONTROLLER . 'data/SessionCTRL.php';
 $session = new SessionCTRL();
 
+require REQUIRES . 'head.php';
+require REQUIRES . 'header.php';
+
 /** 
  * Admin page
  */
@@ -117,7 +120,6 @@ $f3->route('GET /contact',
     }
 );
 
-require REQUIRES . 'head.php';
 // require REQUIRES . 'header-footer.php';
 
 $f3->run();

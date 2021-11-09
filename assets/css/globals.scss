@@ -1,7 +1,19 @@
+@import url('header.css');
+
+$font:'Roboto Mono';
+$font2:'Open Sans';
+$green:rgba(51,113,43,1);
+$green_light:rgb(72, 168, 60);
+$blue:rgba(18,24,51,1);
+$blue_light:rgb(66, 131, 216);
+$yellow:rgb(238, 178, 48);
+$yellow_light:rgb(238, 209, 48);
+
 *, html, body{
     margin:0;
     padding:0;
     position:relative;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -9,4 +21,33 @@ body{
     flex-direction: column;
     height:100vh;
     width:100vw;
+    overflow-x: hidden;
+}
+
+.separator{
+    content:'';
+    height:2px;
+    width:90%;
+    align-self:center;
+    background:linear-gradient(90deg, rgba(142,171,201,0) 15%, rgba(3,16,41,1) 50%, rgba(3,16,41,0) 85%);
+    flex-shrink: 0;
+    margin:1%;
+}
+
+.contact_button{
+    text-decoration: none;
+    padding:2% 6%;
+    border-radius: 8px;
+    color:$blue;
+    background:$yellow;
+    font-family: $font;
+    font-size: calc(10px + 2vw);
+    align-self: center;
+    &:hover{
+        cursor:pointer;
+        transform:scale(1.1);
+        color:$blue_light;
+        background:$yellow_light;
+        transition:all 0.3s;
+    }
 }

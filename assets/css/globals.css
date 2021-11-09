@@ -1,7 +1,9 @@
+@import url("header.css");
 *, html, body {
   margin: 0;
   padding: 0;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -14,5 +16,43 @@ body {
           flex-direction: column;
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
+}
+
+.separator {
+  content: '';
+  height: 2px;
+  width: 90%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(142, 171, 201, 0)), color-stop(50%, #031029), color-stop(85%, rgba(3, 16, 41, 0)));
+  background: linear-gradient(90deg, rgba(142, 171, 201, 0) 15%, #031029 50%, rgba(3, 16, 41, 0) 85%);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 1%;
+}
+
+.contact_button {
+  text-decoration: none;
+  padding: 2% 6%;
+  border-radius: 8px;
+  color: #121833;
+  background: #eeb230;
+  font-family: "Roboto Mono";
+  font-size: calc(10px + 2vw);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.contact_button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #4283d8;
+  background: #eed130;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 /*# sourceMappingURL=globals.css.map */
