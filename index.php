@@ -103,6 +103,17 @@ $f3->route('GET /expeditions',
     }
 );
 
+/** 
+ * Expeditions page
+ */
+$f3->route('GET /contact',
+    function($f3){
+        echo "<title>Contact</title>";
+        require 'controller/pages/ContactCTRL.php';
+        $page = new ContactCTRL();
+    }
+);
+
 require REQUIRES . 'head.php';
 // require REQUIRES . 'header-footer.php';
 echo "<script src ='" . SCRIPTS . 'admin.js' . "'></script>";
