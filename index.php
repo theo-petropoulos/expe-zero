@@ -35,6 +35,7 @@ $f3->route('GET /admin/modify_@item',
         $f3->set('item', $params['item']);
         require 'controller/admin/AdminModifyierCTRL.php';
         $page = new AdminModifyierCTRL();
+        echo "<script src ='" . SCRIPTS . 'admin.js' . "'></script>";
     }
 );
 
@@ -45,6 +46,7 @@ $f3->route('POST|PUT /admin/modify_@item',
         $f3->set('item', $params['item']);
         require 'controller/admin/AdminModifyierCTRL.php';
         $page = new AdminModifyierCTRL();
+        echo "<script src ='" . SCRIPTS . 'admin.js' . "'></script>";
     }
 );
 
@@ -89,6 +91,7 @@ $f3->route('GET /about',
         echo "<title>À Propos</title>";
         require 'controller/pages/AboutCTRL.php';
         $page = new AboutCTRL();
+        echo "<script src ='" . SCRIPTS . 'carousel.js' . "'></script>";
     }
 );
 
@@ -116,6 +119,5 @@ $f3->route('GET /contact',
 
 require REQUIRES . 'head.php';
 // require REQUIRES . 'header-footer.php';
-echo "<script src ='" . SCRIPTS . 'admin.js' . "'></script>";
 
 $f3->run();
