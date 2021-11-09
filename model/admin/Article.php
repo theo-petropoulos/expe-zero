@@ -39,12 +39,23 @@ class Article extends Database{
         /**
          * Insert into DB
          */
-        if(!empty($this->titre) && !empty($this->sous_titre) && $upload === 'OK'){
-            $stmt = self::$db->prepare(
-                "INSERT INTO $this->location ( `image_path`, `image_name`, `titre`, `sous_titre` )
-                VALUES ( ?, ?, ?, ?);"
-            );
-            $stmt->execute([$dbpath, $this->image_name, $this->titre, $this->sous_titre]);
+        if((!empty($this->titre) || !empty($this->categorie) ) && ( !empty($this->sous_titre) || !empty($this->lien) ) && $upload === 'OK'){
+            if($this->location === 'medias'){
+                $this->categorie_name = explode('-', $this->categorie)[0];
+                $this->categorie_id = explode('-', $this->categorie)[1];
+                $stmt = self::$db->prepare(
+                    "INSERT INTO $this->location ( `image_path`, `image_name`, `categorie_name`, `categorie_id`, `lien` )
+                    VALUES ( ?, ?, ?, ?, ?);"
+                );
+                $stmt->execute([$dbpath, $this->image_name, $this->categorie_name, $this->categorie_id, $this->lien]);
+            }
+            else{
+                $stmt = self::$db->prepare(
+                    "INSERT INTO $this->location ( `image_path`, `image_name`, `titre`, `sous_titre` )
+                    VALUES ( ?, ?, ?, ?);"
+                );
+                $stmt->execute([$dbpath, $this->image_name, $this->titre, $this->sous_titre]);
+            }
             return 'article_success';
         }
     }

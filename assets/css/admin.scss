@@ -111,12 +111,26 @@ $yellow_light:rgb(238, 209, 48);
         }
         img{
             width:90%;
+            height:calc(80px + 10vh);
+            object-fit: contain;
         }
         h5{
             font-size:calc(10px + 0.4vw);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color:$blue;
         }
         h6{
             font-size:calc(8px + 0.35vw);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color:$blue_light;
         }
     }
 }
@@ -137,7 +151,7 @@ $yellow_light:rgb(238, 209, 48);
     border-radius: 6px;
     box-shadow: 4px 4px 6px rgba(0,0,0,.3);
     margin:1%;
-    input{
+    input, select{
         margin:1%;
         width:30%;
         min-width:150px;
@@ -165,6 +179,11 @@ $yellow_light:rgb(238, 209, 48);
                 background:$green_light;
                 transform:scale(1.1);
                 transition: all 0.3s;
+            }
+        }
+        &select{
+            option{
+                font-family: $font;
             }
         }
     }

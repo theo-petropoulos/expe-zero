@@ -60,5 +60,7 @@ $f3->route('GET /',
 );
 
 require REQUIRES . 'head.php';
+// require REQUIRES . 'header-footer.php';
+echo "<script src ='" . SCRIPTS . 'admin.js' . "'></script>";
 
 $f3->run();

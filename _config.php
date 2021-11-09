@@ -9,6 +9,7 @@ define('VIEW', ROOT . 'view/');
 define('MODEL', ROOT . 'model/');
 
 define('ASSETS', ROOT . 'assets/');
+define('SCRIPTS', URL . 'scripts/');
 define('UPLOADS', ASSETS . 'uploads/');
 
 define('REQUIRES', VIEW . 'requires/');

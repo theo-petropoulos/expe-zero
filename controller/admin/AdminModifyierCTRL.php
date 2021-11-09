@@ -12,7 +12,13 @@ class AdminModifyierCTRL extends Database{
             if($f3->get('item') === 'password'){
                 require VIEW . 'admin/modify/password.php';
             }
-            else if(in_array($f3->get('item'), ['services', 'medias', 'expeditions', 'defis'])){
+            else if($f3->get('item') === 'medias'){
+                require MODEL . 'data/Fetcher.php';
+                $fetcher = new Fetcher($f3->get('item'));
+                $content = $fetcher->fetchArticles();
+                require VIEW . 'admin/modify/media.php';
+            }
+            else if(in_array($f3->get('item'), ['services', 'expeditions', 'defis'])){
                 require MODEL . 'data/Fetcher.php';
                 $fetcher = new Fetcher($f3->get('item'));
                 $content = $fetcher->fetchArticles();
@@ -27,7 +33,9 @@ class AdminModifyierCTRL extends Database{
          * If the admin is sending a modification
          */
         else if($f3->get('action') === 'modify_send'){
-            // If the admin is modifying the password
+            /**
+             * If the admin is modifying the password
+             */
             if($f3->get('item') === 'password'){
                 require MODEL . 'admin/Admin.php';
                 $admin = new Admin();
@@ -47,7 +55,9 @@ class AdminModifyierCTRL extends Database{
                         break;
                 }
             }
-            // If the admin is modifying an article
+            /**
+             *  If the admin is modifying an article
+             */ 
             else if(in_array($f3->get('item'), ['services', 'medias', 'expeditions', 'defis'])){
                 require MODEL . 'admin/Article.php';
                 $article = new Article($_POST, $_FILES, $f3->get('item'));
@@ -66,8 +76,9 @@ class AdminModifyierCTRL extends Database{
                         Le fichier image est trop volumineux. Veuillez le redimensionner puis <a href="">réessayez</a>'];
                         break;
                     case 'article_success':
-                        $f3->set('success', 'password');
-                        require VIEW . 'admin/modify/article.php';
+                        $f3->set('success', 'article');
+                        $f3->reroute('/admin/modify_@item');
+                        // require VIEW . 'admin/modify/article.php';
                         break;
                     default:
                         $error = ['origin' => 'admin_password', 'message' => 'Une erreur inattendue est survenue. Retour à la <a href="./">page d\'administration.</a>'];
