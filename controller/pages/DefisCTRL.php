@@ -3,6 +3,9 @@
 class DefisCTRL extends Database{
 
     public function __construct(){
-        require VIEW . 'pages/defis.php';
+        require MODEL . 'data/Fetcher.php';
+        $fetcher = new Fetcher('defis');
+        $content = $fetcher->fetchArticles();
+        require VIEW . 'pages/aventures.php';
     }
 }

@@ -1,3 +1,3 @@
 <?php
 
-echo "ici les défis";
+var_dump($content);

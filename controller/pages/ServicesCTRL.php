@@ -3,6 +3,9 @@
 class ServicesCTRL extends Database{
 
     public function __construct(){
-        require VIEW . 'pages/services.php';
+        require MODEL . 'data/Fetcher.php';
+        $fetcher = new Fetcher('services');
+        $content = $fetcher->fetchArticles();
+        require VIEW . 'pages/aventures.php';
     }
 }

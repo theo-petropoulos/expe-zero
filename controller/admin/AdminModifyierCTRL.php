@@ -18,6 +18,12 @@ class AdminModifyierCTRL extends Database{
                 $content = $fetcher->fetchArticles();
                 require VIEW . 'admin/modify/media.php';
             }
+            else if($f3->get('item') === 'partenaires'){
+                require MODEL . 'data/Fetcher.php';
+                $fetcher = new Fetcher($f3->get('item'));
+                $content = $fetcher->fetchArticles();
+                require VIEW . 'admin/modify/partenaires.php';
+            }
             else if(in_array($f3->get('item'), ['services', 'expeditions', 'defis'])){
                 require MODEL . 'data/Fetcher.php';
                 $fetcher = new Fetcher($f3->get('item'));
@@ -58,7 +64,7 @@ class AdminModifyierCTRL extends Database{
             /**
              *  If the admin is modifying an article
              */ 
-            else if(in_array($f3->get('item'), ['services', 'medias', 'expeditions', 'defis'])){
+            else if(in_array($f3->get('item'), ['services', 'medias', 'partenaires', 'expeditions', 'defis'])){
                 require MODEL . 'admin/Article.php';
                 $article = new Article($_POST, $_FILES, $f3->get('item'));
                 switch($article->create()){

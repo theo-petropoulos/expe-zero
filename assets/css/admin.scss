@@ -74,7 +74,7 @@ $yellow_light:rgb(238, 209, 48);
     position:relative;
     display:flex;
     justify-content: center;
-    align-items:center;
+    align-items:stretch;
     align-self:center;
     flex-wrap: wrap;
     width:95%;
@@ -93,6 +93,7 @@ $yellow_light:rgb(238, 209, 48);
         justify-content: center;
         align-items: center;
         padding:1% 2%;
+        text-align: center;
         .delete_article{
             color:red;
             position:absolute;
@@ -113,6 +114,10 @@ $yellow_light:rgb(238, 209, 48);
             width:90%;
             height:calc(80px + 10vh);
             object-fit: contain;
+        }
+        h4{
+            font-size:calc(12px + 0.5vw);
+            color:$blue;
         }
         h5{
             font-size:calc(10px + 0.4vw);

@@ -84,22 +84,22 @@ $f3->route('GET /services',
 /** 
  * Services page
  */
-$f3->route('GET /medias',
+$f3->route('GET /about',
     function($f3){
-        echo "<title>Médias</title>";
-        require 'controller/pages/MediasCTRL.php';
-        $page = new MediasCTRL();
+        echo "<title>À Propos</title>";
+        require 'controller/pages/AboutCTRL.php';
+        $page = new AboutCTRL();
     }
 );
 
 /** 
- * Expeditions page
+ * Aventures page
  */
-$f3->route('GET /expeditions',
+$f3->route('GET /aventures',
     function($f3){
-        echo "<title>Expéditions</title>";
-        require 'controller/pages/ExpeditionsCTRL.php';
-        $page = new ExpeditionsCTRL();
+        echo "<title>Aventures</title>";
+        require 'controller/pages/AventuresCTRL.php';
+        $page = new AventuresCTRL();
     }
 );
 
