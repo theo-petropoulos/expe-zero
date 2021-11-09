@@ -120,6 +120,6 @@ $f3->route('GET /contact',
     }
 );
 
-// require REQUIRES . 'header-footer.php';
-
 $f3->run();
+
+require REQUIRES . 'footer.php';

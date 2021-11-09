@@ -7,7 +7,7 @@
     <span id="menu_right">
         <ul id="menu_items">
             <li class="menu_item">
-                <a href="aventures">AVENTURES</a>  
+                <a href="aventures">AVENTURES</a>
             </li>
             |
             <li class="menu_item">

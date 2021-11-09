@@ -9,7 +9,7 @@
 
 <section id="about_bio">
 <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fbrutofficiel%2Fvideos%2F356505142932514%2F&show_text=false&width=267&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-    <p>
+    <p id="who">
         Je m'appelle <strong>Benjamin de Molliens</strong>, j'ai 34 ans, j'habite à <strong>Marseille</strong> et je suis
         originaire de Bretagne. Diplômé de l'ICAM Lille et l'ESSEC Business School,
         j'ai  passé  5  années  à  l'international  dans  le  digital.  J'ai  ensuite  co-fondé
@@ -40,7 +40,7 @@
 
 <span class="separator"></span>
 
-<h2>Ils en parlent</h2>
+<h2 id="medias">Ils en parlent</h2>
 <section id="about_medias">
     <?php foreach($content['medias'] as $key => $value){?>
         <a href="<?=$value['lien'];?>" class="media_link" id="media_<?=$value['image_name'];?>">
@@ -49,7 +49,7 @@
     <?php } ?>
 </section>
 
-<h2>Les partenaires</h2>
+<h2 id="partenaires">Les partenaires</h2>
 <section id="about_partenaires">
     <?php foreach($content['partenaires'] as $key => $value){?>
         <img src="/expe-zero/<?=$value['image_path'];?>" class="image_partenaire"> 
