@@ -1,6 +1,0 @@
-{
-    "require": {
-        "phpmailer/phpmailer": "^6.5",
-        "bcosca/fatfree": "^3.7"
-    }
-}
