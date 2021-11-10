@@ -1,0 +1,72 @@
+.container01 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 35%;
+}
+
+.container02 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 35%;
+}
+
+.container03 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 35%;
+}
+
+.container04 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 35%;
+}
+
+.paragraphe01 {
+    background-color: rgb(255, 255, 255);
+    padding: 0.25%;
+    padding: 0.5%;
+    width: 100vh;
+}
+
+.paragraphe02 {
+    background-color: rgb(31, 100, 52);
+    padding: 0.25%;
+    padding: 0.5%;
+    width: 100vh;
+}
+
+.paragraphe01,
+.paragraphe02,
+.paragraphe03 p {
+    color: white;
+    text-align: center;
+}
+
+.srcc {
+    width: 150%;
+    height: 103%;
+    margin-left: 201%;
+}
+
+.order {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+}
+
+.all-container {
+    margin-right: 40%;
+    margin-top: 3%;
+    margin-left: 0.5%;
+}
+
+.ligne02 {
+    text-decoration: none;
+    color: white;
+}
+
+.ligne01 {
+    text-decoration: none;
+    color: #33712b;
+}
