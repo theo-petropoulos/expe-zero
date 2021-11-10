@@ -1,4 +1,8 @@
-<header class="justify-content-between pt-4" style="font-family: 'Roboto Mono', monospace;">
+<?php
+ob_start();
+?>
+
+<header class="justify-content-between pt-4" style="font-family: 'Roboto Mono', monospace;z-index:4">
         <!-- Navbar start -->
         <!-- <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"> -->
             <div>

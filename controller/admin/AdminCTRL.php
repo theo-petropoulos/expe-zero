@@ -17,7 +17,7 @@ class AdminCTRL extends Database{
                 $result = $stmt->fetch(PDO::FETCH_ASSOC);
                 // Compare value with database
                 if($result['authtoken'] === $_COOKIE['authtoken_adm']){
-                    require VIEW . 'admin/home.php';
+                    require_once VIEW . 'admin/home.php';
                 }
                 // Destroy cookie and redirect to home page
                 else{
@@ -32,7 +32,7 @@ class AdminCTRL extends Database{
             }
             // Else go to login form
             else{
-                require VIEW . 'admin/form.php';
+                require_once VIEW . 'admin/form.php';
             }
         }
         /**
@@ -53,7 +53,7 @@ class AdminCTRL extends Database{
                     );
                     $stmt->execute([$token]);
                     $_SESSION['invalid_login'] = 0;
-                    $f3->set('action', 'admin_access');
+                    // $f3->set('action', 'admin_access');
                     $f3->reroute('/admin');
                 }
                 else{

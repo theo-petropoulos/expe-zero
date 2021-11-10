@@ -1,6 +1,6 @@
 <?php
 session_start();
-require MODEL . 'data/Database.php';
+require_once MODEL . 'data/Database.php';
 
 class SessionCTRL extends Database{
     

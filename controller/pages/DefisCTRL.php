@@ -6,6 +6,6 @@ class DefisCTRL extends Database{
         require MODEL . 'data/Fetcher.php';
         $fetcher = new Fetcher('defis');
         $content = $fetcher->fetchArticles();
-        require VIEW . 'pages/aventures.php';
+        require VIEW . 'pages/defis.php';
     }
 }
