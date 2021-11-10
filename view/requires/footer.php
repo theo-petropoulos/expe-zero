@@ -74,35 +74,35 @@
           <ul class="list-unstyled bg-dark text-white">
             <li>
                 <button class="uk-button uk-button-text text-white">
-                    <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
+                    <a class="nav-link disabled uk-link-reset" href=""  aria-disabled="true">
                         Aventures
                     </a>
                 </button>
             </li>
             <li>
                 <button class="uk-button uk-button-text text-white">
-                    <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
+                    <a class="nav-link disabled uk-link-reset" href=""  aria-disabled="true">
                         Défi
                     </a>
                 </button>
             </li>
             <li>
                 <button class="uk-button uk-button-text text-white">
-                    <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
+                    <a class="nav-link disabled uk-link-reset" href=""  aria-disabled="true">
                         Objectif Zero
                     </a>
                 </button>
             </li>
             <li>
                 <button class="uk-button uk-button-text text-white">
-                    <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
+                    <a class="nav-link disabled uk-link-reset" href=""  aria-disabled="true">
                         A propos
                     </a>
                 </button>
             </li>
             <li>
                 <button class="uk-button uk-button-text text-white">
-                    <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
+                    <a class="nav-link disabled uk-link-reset" href=""  aria-disabled="true">
                         Soutenir Expe Zero
                     </a>
                 </button>
@@ -119,7 +119,7 @@
           <ul class="list-unstyled text-white">
             <li>
                 <button class="uk-button uk-button-text text-white">
-                    <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
+                    <a class="nav-link disabled uk-link-reset" href=""  aria-disabled="true">
                         <img class="img-fluid" src="https://res.cloudinary.com/afohann/image/upload/v1636531455/Logo_Maif_2019.svg_mxroox.png" uk-responsive>
                     </a>
                 </button>
@@ -139,7 +139,6 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer Section end -->
-
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

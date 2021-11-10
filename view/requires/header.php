@@ -12,7 +12,7 @@
                     <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
                         <li class="nav-item p-4">
                             <li class="nav-item fs-1">
-                                <a class="nav-link active uk-link-reset" aria-current="page" href="#">Expédition<div class="text-break">Zéro</div></a>
+                                <a class="nav-link active uk-link-reset" aria-current="page" href="/expe-zero/">Expédition<div class="text-break">Zéro</div></a>
                             </li>
                         </li>
                     </ul>
@@ -22,7 +22,7 @@
                             <li class="nav-item p-3">
                                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
                                     <button class="uk-button uk-button-text">
-                                        <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
+                                        <a class="nav-link disabled uk-link-reset" href="/expe-zero/aventures"  aria-disabled="true">
                                             Aventures
                                         </a>
                                     </button>
@@ -32,8 +32,8 @@
                             <li class="nav-item p-3">
                                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
                                     <button class="uk-button uk-button-text">
-                                        <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
-                                            Défi
+                                        <a class="nav-link disabled uk-link-reset" href="/expe-zero/defis"  aria-disabled="true">
+                                            Défis
                                         </a>
                                     </button>
                                 </a>
@@ -43,7 +43,7 @@
                             <li class="nav-item p-3">
                                 <a class="nav-link disabled" href="#" aria-disabled="true">
                                     <button class="uk-button uk-button-text">
-                                        <a class="nav-link disabled uk-link-reset" href="" id="navbarScrollingDropdown" aria-expanded="false" aria-disabled="true" role="button" data-bs-toggle="dropdown">
+                                        <a class="nav-link disabled uk-link-reset" href="/expe-zero/services" id="navbarScrollingDropdown" aria-expanded="false" aria-disabled="true" role="button" data-bs-toggle="dropdown">
                                             Objectif Zéro
                                         </a>
                                     </button>
@@ -51,15 +51,15 @@
                                         <ul class="uk-nav uk-dropdown-nav">
                                             <li class="uk-active">
                                                 <button class="uk-button uk-button-text">
-                                                    <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
-                                                        Conférence
+                                                    <a class="nav-link disabled uk-link-reset" href="/expe-zero/services#conferences"  aria-disabled="true">
+                                                        Conférences
                                                     </a>
                                                 </button>
                                             </li>
 
                                             <li>
                                                 <button class="uk-button uk-button-text">
-                                                    <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
+                                                    <a class="nav-link disabled uk-link-reset" href="/expe-zero/services#defis"  aria-disabled="true">
                                                         Défis Salariés
                                                     </a>
                                                 </button>
@@ -67,7 +67,7 @@
 
                                             <li>
                                                 <button class="uk-button uk-button-text">
-                                                    <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
+                                                    <a class="nav-link disabled uk-link-reset" href="/expe-zero/services#ateliers"  aria-disabled="true">
                                                         Ateliers Climat
                                                     </a>
                                                 </button>
@@ -75,7 +75,7 @@
 
                                             <li>
                                                 <button class="uk-button uk-button-text">
-                                                    <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
+                                                    <a class="nav-link disabled uk-link-reset" href="/expe-zero/services#bilan"  aria-disabled="true">
                                                         Bilan Carbone
                                                     </a>
                                                 </button>
@@ -83,7 +83,7 @@
 
                                             <li>
                                                 <button class="uk-button uk-button-text">
-                                                    <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
+                                                    <a class="nav-link disabled uk-link-reset" href="/expe-zero/services#acv"  aria-disabled="true">
                                                         ACV
                                                     </a>
                                                 </button>
@@ -98,7 +98,7 @@
                             <li class="nav-item p-3">
                                 <a class="nav-link disabled" href="#" aria-disabled="true">
                                     <button class="uk-button uk-button-text">
-                                        <a class="nav-link disabled uk-link-reset" href="" id="navbarScrollingDropdown" aria-expanded="false" aria-disabled="true" role="button" data-bs-toggle="dropdown">
+                                        <a class="nav-link disabled uk-link-reset" href="/expe-zero/about" id="navbarScrollingDropdown" aria-expanded="false" aria-disabled="true" role="button" data-bs-toggle="dropdown">
                                             À propos
                                         </a>
                                     </button>
@@ -106,7 +106,7 @@
                                         <ul class="uk-nav uk-dropdown-nav">
                                             <li class="uk-active">
                                                 <button class="uk-button uk-button-text">
-                                                    <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
+                                                    <a class="nav-link disabled uk-link-reset" href="/expe-zero/about#who"  aria-disabled="true">
                                                         Qui suis-je
                                                     </a>
                                                 </button>
@@ -114,15 +114,7 @@
 
                                             <li>
                                                 <button class="uk-button uk-button-text">
-                                                    <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
-                                                        Vidéos
-                                                    </a>
-                                                </button>
-                                            </li>
-
-                                            <li>
-                                                <button class="uk-button uk-button-text">
-                                                    <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
+                                                    <a class="nav-link disabled uk-link-reset" href="/expe-zero/about#medias"  aria-disabled="true">
                                                         Médias
                                                     </a>
                                                 </button>
@@ -130,7 +122,7 @@
 
                                             <li>
                                                 <button class="uk-button uk-button-text">
-                                                    <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
+                                                    <a class="nav-link disabled uk-link-reset" href="/expe-zero/about#partenaires"  aria-disabled="true">
                                                         Partenaires
                                                     </a>
                                                 </button>
@@ -143,8 +135,8 @@
 
                             <li class="nav-item p-3">
                                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
-                                    <button class="uk-button uk-button-text">
-                                        <a class="nav-link disabled uk-link-reset" href="" target="_blank" aria-disabled="true">
+                                    <button class="uk-button uk-button-text  text-danger">
+                                        <a class="nav-link disabled uk-link-reset text-danger" href="https://en.tipeee.com/expedition-zero"  aria-disabled="true">
                                             Soutenir Expe Zéro
                                         </a>
                                     </button>

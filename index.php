@@ -122,4 +122,6 @@ $f3->route('GET /contact',
 
 $f3->run();
 
+echo "<script src ='" . SCRIPTS . 'button.js' . "'></script>";
+
 require REQUIRES . 'footer.php';
