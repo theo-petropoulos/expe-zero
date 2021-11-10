@@ -6,6 +6,6 @@ class ServicesCTRL extends Database{
         require MODEL . 'data/Fetcher.php';
         $fetcher = new Fetcher('services');
         $content = $fetcher->fetchArticles();
-        require VIEW . 'pages/aventures.php';
+        require VIEW . 'pages/services.php';
     }
 }

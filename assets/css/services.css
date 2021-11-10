@@ -1,0 +1,134 @@
+.container01 {
+    display: flex;
+    flex-direction: row;
+}
+
+.container02 {
+    display: flex;
+    flex-direction: row;
+}
+
+.container03 {
+    display: flex;
+    flex-direction: row;
+}
+
+.container04 {
+    display: flex;
+    flex-direction: row;
+}
+
+.paragraphe01 {
+    background-color: rgb(255, 255, 255);
+    padding: 0.25%;
+    padding: 0.5%;
+}
+
+.paragraphe02 {
+    background-color: rgb(31, 100, 52);
+    padding: 0.25%;
+    padding: 0.5%;
+}
+
+.paragraphe01,
+.paragraphe02,
+.paragraphe03 p {
+    color: white;
+    text-align: center;
+}
+
+.srcc {
+    width: 150%;
+    height: 100%;
+}
+
+.order {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+}
+
+.all-container {
+    margin-top: 3%;
+    margin-left: 0.5%;
+    display:flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-grow:1;
+    width:70%;
+    height:max-content;
+}
+
+.all-container div{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+}
+
+.all-container div section{
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+}
+
+.all-container div section div{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.ligne02 {
+    text-decoration: none;
+    color: white;
+}
+
+.ligne01 {
+    text-decoration: none;
+    color: #33712b;
+}
+
+.order{
+    display:flex;
+    flex-direction: row;
+}
+
+.img{
+    position:relative;
+    width:30%;
+}
+
+.img img{
+    height:auto;
+    width:100%;
+}
+
+main{
+    height:max-content;
+    position:relative;
+    display:flex;
+    margin:2% 0%;
+}
+
+main .order{
+    height:max-content;
+    position:relative;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+
+@media screen and (max-width:499px){
+    .img{
+        display:none;
+    }
+    .all-container div section{
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
